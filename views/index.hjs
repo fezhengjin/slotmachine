@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>年会抽奖 - XSKY</title>
+    <link rel='stylesheet' href='/stylesheets/normaliz.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="container">
+      <ul class="awardees"></ul>
+      <div class="won">
+        <img src="/images/won_bg.png"/>
+      </div>
+      <div class="wrapper">
+        <div class="board"></div>
+        <div class="reelOverlay"></div>
+      </div>
+      <a href="javascript:void(0);" class="handler start js-start">抽奖</a>
+    </div>
+  <script src="/javascripts/jquery.min.js"></script>
+  <script src="/javascripts/lockr.min.js"></script>
+  <script src="/javascripts/main.js"></script>
+  </body>
+</html>

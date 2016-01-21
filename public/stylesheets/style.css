@@ -1,0 +1,136 @@
+@keyframes shuffle {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, -70rem, 0);
+  }
+}
+
+
+html, body {
+  color: #F45420;
+  font: 100% "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: url(/images/main_bg.png) center no-repeat;
+  background-size: cover;
+  min-height: 100%;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.container {
+  background: url(/images/main_bg_machine.png) center no-repeat;
+  position: relative;
+  width: 880px;
+  height: 800px;
+  margin: 0 auto;
+}
+
+.won {
+  position: absolute;
+  top: 189px;
+  left: 292px;
+  display: none;
+}
+.won.active {
+  display: block;
+}
+
+.awardees {
+  color: #999;
+  position: absolute;
+  left: 40px;
+  top: 260px;
+  line-height: 40px;
+  list-style: none;
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  width: 189px;
+  height: 375px;
+  text-indent: 30px;
+  overflow: auto;
+}
+.awardees li {
+  border-bottom: 2px solid #ddd;
+}
+
+.wrapper {
+  position: absolute;
+  display: flex;
+  width: 27rem;
+  height: 17.6rem;
+  overflow: hidden;
+  background: transparent;
+  border-radius: 10px;
+  text-align: center;
+  color: #F45420;
+  text-shadow: -2px -2px 0 #A62420;
+  font: 5rem/1.4 monaco, monospace;
+  left: 301px;
+  top:304px;
+}
+
+.digit {
+  transform: translate3d(0, -1.3rem, 0);
+  overflow: hidden;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.digit li {
+  float: left;
+  flex: 1;
+  -webkit-flex: 1;
+}
+
+.reelOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background: transparent url(/images/reel_overlay.png) 0 center no-repeat;
+}
+
+.board {
+  flex-grow: 1;
+}
+
+.scroll {
+  animation-play-state: running !important;
+  animation: shuffle .8s linear infinite;
+}
+
+.start {
+  color: #fff;
+  background: #29D146;
+  width: 138px;
+  height: 58px;
+  line-height: 58px;
+  position: absolute;
+  right: 143px;
+  bottom: 102px;
+  text-align: center;
+  font-size: 33px;
+  border-radius: 9px;
+  box-shadow: inset 0px -1px 14px 3px rgba(0,0,0,.3);
+  text-decoration: none;
+  text-shadow: 2px 3px 3px #777;
+}
+.start:hover {
+  background: #23E344;
+  box-shadow:
+    inset 0px -1px 14px 3px rgba(0,0,0,.3),
+    0px 0px 14px 4px rgba(41,209,70,.6)
+}
+.start:active {
+  color: #74BC80;
+  background: #298739;
+  box-shadow: inset 5px 5px 14px 3px rgba(0,0,0,.4),
+}
