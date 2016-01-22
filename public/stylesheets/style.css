@@ -2,8 +2,11 @@
   0% {
     transform: translate3d(0, 0, 0);
   }
+  50% {
+    transform: translate3d(0, -80px, 0);
+  }
   100% {
-    transform: translate3d(0, -70rem, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -80,6 +83,7 @@ a {
   display: flex;
   width: 100%;
   padding: 0;
+  height: 112px;
   margin: 0;
 }
 .digit li {
@@ -102,9 +106,14 @@ a {
   flex-grow: 1;
 }
 
-.scroll {
+/*.scroll {
   animation-play-state: running !important;
   animation: shuffle .8s linear infinite;
+}
+*/
+
+.board-confirm .digit {
+  animation: shuffle .5s;
 }
 
 .start {
@@ -134,3 +143,4 @@ a {
   background: #298739;
   box-shadow: inset 5px 5px 14px 3px rgba(0,0,0,.4),
 }
+

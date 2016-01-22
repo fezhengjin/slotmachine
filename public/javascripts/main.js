@@ -118,6 +118,7 @@ function stop() {
     .removeClass('js-stop')
     .addClass('js-confirm')
     .text('确认');
+  $board.addClass('board-confirm');
 }
 
 function confirm() {
@@ -130,6 +131,7 @@ function confirm() {
     .removeClass('js-confirm')
     .addClass('js-start')
     .text('抽奖');
+  $board.removeClass('board-confirm');
 }
 
 function getAwardees() {
